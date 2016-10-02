@@ -677,7 +677,7 @@ h6, .h6 {
   line-height: 1.4;
   text-rendering: optimizeSpeed;
   text-transform: uppercase;
-  color: #3399cc;
+  color: #fff;
   margin-bottom: 0;
   text-transform: uppercase;
   font-weight: 600;
@@ -1292,7 +1292,8 @@ a.button:hover {
 .main-container,
 .footer-container {
   position: relative;
-  max-width: 1260px;
+  /*max-width: 1260px;*/
+  width: 100%;
   margin: 0 auto;
   padding: 15px;
 }
@@ -1306,11 +1307,12 @@ a.button:hover {
 @media only screen and (min-width: 480px) {
   .main-container,
   .footer-container {
-    padding: 30px;
+    padding: 30px 30px 0px 30px;
   }
 }
 .footer-container {
   padding-top: 0px;
+  background-color: #555;
 }
 
 /* -------------------------------------------- *
@@ -3164,9 +3166,11 @@ body {
  * ============================================ */
 @media only screen and (min-width: 771px) {
   .page-header {
-    max-width: 1260px;
-    margin: 0 auto;
+    /*max-width: 1260px;*/
+    width: 100%;
+    margin: 0 auto !important;
     padding: 0 30px;
+    
   }
 
   .page-header-container {
@@ -3460,7 +3464,7 @@ a.skip-link {
   #header-nav {
     display: block;
     /* Force visibility */
-    border-bottom: 1px solid #ededed;
+    /*border-bottom: 1px solid #ededed;*/
   }
 }
 /* ============================================ *
@@ -3993,7 +3997,7 @@ a.skip-link {
 }
 .footer .block-title,
 .footer address {
-  color: #3399cc;
+  color: #fff;
 }
 .footer .links {
   float: left;
@@ -4007,10 +4011,10 @@ a.skip-link {
   padding: 4px 0;
 }
 .footer .links a {
-  color: #636363;
+  color: #fff;
 }
 .footer .links a:hover {
-  color: #3399cc;
+  color: #fff;
 }
 .footer .block-subscribe {
   float: right;
@@ -4127,9 +4131,9 @@ a.skip-link {
   border-top: 1px solid #cccccc;
   text-align: center;
   width: 100%;
-  font-size: 11px;
-  margin-top: 30px;
-  padding: 30px 0;
+  font-size: 12px;
+  padding-top: 30px;
+
 }
 @media only screen and (max-width: 1199px) {
   .footer .links {
