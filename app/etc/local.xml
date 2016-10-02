@@ -41,9 +41,9 @@
             <default_setup>
                 <connection>
                     <host><![CDATA[localhost]]></host>
-                    <username><![CDATA[swara1b2_swaraj]]></username>
-                    <password><![CDATA[admin123]]></password>
-                    <dbname><![CDATA[swara1b2_swara_new]]></dbname>
+                    <username><![CDATA[root]]></username>
+                    <password><![CDATA[ ]]></password>
+                    <dbname><![CDATA[magento]]></dbname>
                     <initStatements><![CDATA[SET NAMES utf8]]></initStatements>
                     <model><![CDATA[mysql4]]></model>
                     <type><![CDATA[pdo_mysql]]></type>
