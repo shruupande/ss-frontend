@@ -1,0 +1,109 @@
+.page-title h2{
+  display: none;
+}
+.mob-banner {
+    line-height: 9;
+    background-color: yellowgreen;
+    color: #fff;
+    font-size: 40px;
+    font-family: 'Roboto Slab', serif;
+    text-align: center;
+}
+.mob-banner-2 {
+    line-height: 9;
+    color: #fff;
+    font-family: 'Roboto Slab', serif;
+    text-align: center;
+    border:1px solid #eee;
+}
+.mt40{
+  margin-top: 40px;
+}
+.pad0{
+  padding: 0px;
+}
+.trending-products{
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+/*.col-xs-3{
+  width: 19%;
+  float: left;
+  margin: 15px 5px 10px 5px;
+}*/
+.products-card{
+  margin-left: 30px;
+  margin-right: 30px;
+  line-height: 20;
+  color: #000;
+  font-family: 'Roboto Slab', serif;
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  border:1px solid #eee;
+}
+.page-header,.account-cart-wrapper a,.account-cart-wrapper .header-minicart{
+  background-color: #f2f5fb;
+}
+.account-cart-wrapper a .label{
+  color:#8c7047;
+  text-transform: capitalize;
+  font-size: 14px;
+}
+.logo-text{
+  font-size: 30px;
+  line-height: 2;
+  margin-left: 35px;
+  color: #f55253;
+}
+#select-currency{
+  color: #000;
+}
+a:focus, a:hover{
+  text-decoration: none;
+}
+.trending-products-heading{
+  font-size: 20px;
+  padding: 0px;
+}
+.title{
+  font-size: 20px;
+  color: #333;
+}
+#side-menu li a{
+  font-size: 15px;
+  color: #8c7047;
+  line-height: 1.6;
+}
+.bg-grey{
+  background-color: #f2f5fb;
+}
+.pad20{
+  padding: 20px;
+}
+.mb10{
+  margin-bottom: 10px;
+}
+.currency-switcher label{
+  color: #fff;
+  text-transform: capitalize;
+}
+
+@media (max-width: 768px){
+  .mob-banner {
+      line-height: 10;
+      font-size: 20px;
+  }
+  .mob-banner-2  {
+      line-height: 10;
+      font-size: 20px;
+  }
+  .products-card{
+    width: 45% ;
+    margin-left: 7px;
+    margin-right: 7px;
+  }
+  .page-header{
+    margin: 0px;
+  }
+}
