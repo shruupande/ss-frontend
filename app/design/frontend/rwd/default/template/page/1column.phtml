@@ -40,6 +40,9 @@
 
 <head>
 <?php echo $this->getChildHtml('head') ?>
+<link rel="stylesheet"  href="<?php echo $this->getSkinUrl();?>css/lightslider.css"/>
+<link rel="stylesheet"  href="<?php echo $this->getSkinUrl();?>css/bootstrap.min.css"/>
+<link rel="stylesheet"  href="<?php echo $this->getSkinUrl();?>css/custom.css"/>
 </head>
 <body<?php echo $this->getBodyClass()?' class="'.$this->getBodyClass().'"':'' ?>>
 <?php echo $this->getChildHtml('after_body_start') ?>
@@ -63,6 +66,60 @@
     </div>
 </div>
 <?php echo $this->getAbsoluteFooter() ?>
+<script src="<?php echo $this->getSkinUrl();?>js/bootstrap.min.js"></script> 
+<script src="<?php echo $this->getSkinUrl();?>js/lightslider.js"></script> 
+<script type="text/javascript">
+      //light slider
+      jQuery("#content-slider").lightSlider({
+          item:1,
+          auto:true,
+          speed:500,
+          loop:true,
+          keyPress:true,
+          mode:'slide',
+          useCSS:true,
+          cssEasing:'ease',
+          pager:false,
+          pauseOnHover:true,
+          enableTouch:true,
+          enableDrag:true,
+          onSliderLoad: function() {
+            jQuery('#content-slider').removeClass('cs-hidden');
+            jQuery('#loader').hide();
+          }
+      });
+
+      jQuery('#content-slider-2').lightSlider({
+          item:6,
+           auto:false,
+          loop:true,
+          slideMove:2,
+          easing: 'cubic-bezier(0.25, 0, 0.25, 1)',
+          speed:600,
+          responsive : [
+              {
+                  breakpoint:800,
+                  settings: {
+                      item:3,
+                      slideMove:1,
+                      slideMargin:6,
+                    }
+              },
+              {
+                  breakpoint:480,
+                  settings: {
+                      item:2,
+                      slideMove:1
+                    }
+              }
+          ],
+          onSliderLoad: function() {
+            jQuery('#content-slider-2').removeClass('cs-hidden-2');
+            jQuery('#loader-2').hide();
+          }
+      });  
+      
+    </script>
 </body>
 </html>
 
