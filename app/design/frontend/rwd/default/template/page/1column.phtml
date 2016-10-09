@@ -117,7 +117,25 @@
             jQuery('#content-slider-2').removeClass('cs-hidden-2');
             jQuery('#loader-2').hide();
           }
+      });
+
+
+      jQuery(document).ready(function(){
+          jQuery(".dropdown").hover(
+              function() { jQuery('.dropdown-menu', this).stop().fadeIn("fast");
+              },
+              function() { jQuery('.dropdown-menu', this).stop().fadeOut("fast");
+          });
+
+          jQuery('.menu-large').click(function(event){
+            event.preventDefault();
+            event.stopPropagation();
+            // jQuery(this).addClass('visible-important');
+            // jQuery(this).children().hasClass('megamenu').hide();
+          });
       });  
+
+
       
     </script>
 </body>
