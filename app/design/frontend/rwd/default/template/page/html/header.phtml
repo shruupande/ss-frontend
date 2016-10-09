@@ -27,7 +27,6 @@
  * @var Mage_Page_Block_Html_Header $this
  */
 ?>
-
 <div class="header-language-background">
     <div class="header-language-container">
         <div class="store-language-container">
@@ -99,5 +98,10 @@
     </div>
 </header>
 
-
 <?php echo $this->getChildHtml('topContainer'); ?>
+
+<!-- Mega Dropdown -->
+<?php print $this->getLayout()
+                 ->createBlock("catalog/product_new")
+                 ->setTemplate("catalog/product/mega-dropdown.phtml")
+                 ->toHtml(); ?>

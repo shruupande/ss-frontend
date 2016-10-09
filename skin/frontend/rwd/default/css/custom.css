@@ -77,8 +77,14 @@ a:focus, a:hover{
 .pad20{
   padding: 20px;
 }
+.pad5{
+  padding: 5px;
+}
 .mb10{
   margin-bottom: 10px;
+}
+.mb20{
+  margin-bottom: 20px;
 }
 .currency-switcher label{
   color: #fff;
@@ -107,11 +113,16 @@ a:focus, a:hover{
   display: block !important;
 }
 
+.mega-dropdown{
+  margin-bottom: 0px;
+  z-index: 2;
+}
+
 /*mega dropdown css*/
 .navbar-default{
 color: #fff;
-background-color: #ccc6c6;
-border-color: #aca1a2;
+background-color: #d66d6d;
+border-color: #d66d6d;
 }
 .navbar-default .navbar-nav > li > a{
   color:#fff;

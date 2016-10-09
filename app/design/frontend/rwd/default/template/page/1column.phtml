@@ -41,8 +41,6 @@
 <head>
 <?php echo $this->getChildHtml('head') ?>
 <link rel="stylesheet"  href="<?php echo $this->getSkinUrl();?>css/lightslider.css"/>
-<link rel="stylesheet"  href="<?php echo $this->getSkinUrl();?>css/bootstrap.min.css"/>
-<link rel="stylesheet"  href="<?php echo $this->getSkinUrl();?>css/custom.css"/>
 </head>
 <body<?php echo $this->getBodyClass()?' class="'.$this->getBodyClass().'"':'' ?>>
 <?php echo $this->getChildHtml('after_body_start') ?>
@@ -66,7 +64,6 @@
     </div>
 </div>
 <?php echo $this->getAbsoluteFooter() ?>
-<script src="<?php echo $this->getSkinUrl();?>js/bootstrap.min.js"></script> 
 <script src="<?php echo $this->getSkinUrl();?>js/lightslider.js"></script> 
 <script type="text/javascript">
       //light slider
@@ -119,24 +116,6 @@
           }
       });
 
-
-      jQuery(document).ready(function(){
-          jQuery(".dropdown").hover(
-              function() { jQuery('.dropdown-menu', this).stop().fadeIn("fast");
-              },
-              function() { jQuery('.dropdown-menu', this).stop().fadeOut("fast");
-          });
-
-          jQuery('.menu-large').click(function(event){
-            event.preventDefault();
-            event.stopPropagation();
-            // jQuery(this).addClass('visible-important');
-            // jQuery(this).children().hasClass('megamenu').hide();
-          });
-      });  
-
-
-      
     </script>
 </body>
 </html>

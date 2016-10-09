@@ -157,7 +157,7 @@
     background-image: url('../img/controls.png');
     cursor: pointer;
     position: absolute;
-    z-index: 99;
+    z-index: 1;
     margin-top: -16px;
     opacity: 0.5;
     -webkit-transition: opacity 0.35s linear 0s;
@@ -167,11 +167,11 @@
     opacity: 1;
 }
 .lSAction > .lSPrev {
-    background-position: 0 0;
+    background-position: -10px -10px;
     left: 10px;
 }
 .lSAction > .lSNext {
-    background-position: -32px 0;
+    background-position: -70px -10px;
     right: 10px;
 }
 .lSAction > a.disabled {
