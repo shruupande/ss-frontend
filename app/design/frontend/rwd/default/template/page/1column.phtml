@@ -86,9 +86,9 @@
           }
       });
 
-      jQuery('#content-slider-2').lightSlider({
+      jQuery('#content-slider-2,#content-slider-3').lightSlider({
           item:6,
-           auto:false,
+          auto:false,
           loop:true,
           slideMove:2,
           easing: 'cubic-bezier(0.25, 0, 0.25, 1)',
@@ -113,6 +113,8 @@
           onSliderLoad: function() {
             jQuery('#content-slider-2').removeClass('cs-hidden-2');
             jQuery('#loader-2').hide();
+            jQuery('#content-slider-3').removeClass('cs-hidden-3');
+            jQuery('#loader-3').hide();
           }
       });
 

@@ -39,10 +39,10 @@
   border:1px solid #eee;
 }
 .page-header,.account-cart-wrapper a,.account-cart-wrapper .header-minicart{
-  background-color: #f2f5fb;
+  background-color: #efefef;
 }
 .account-cart-wrapper a .label{
-  color:#8c7047;
+  color:#696969;
   text-transform: capitalize;
   font-size: 14px;
 }
@@ -50,7 +50,10 @@
   font-size: 30px;
   line-height: 2;
   margin-left: 35px;
-  color: #f55253;
+  color: #696969;
+}
+.logo-text:hover{
+  color: #696969; 
 }
 #select-currency{
   color: #000;
@@ -87,7 +90,7 @@ a:focus, a:hover{
   margin-bottom: 20px;
 }
 .currency-switcher label{
-  color: #fff;
+  color: #696969;
   text-transform: capitalize;
 }
 
@@ -117,14 +120,20 @@ a:focus, a:hover{
   margin-bottom: 0px;
   z-index: 2;
 }
+.bg-black-op3{
+  background-color: rgba(0,0,0,0.22);
+}
+.width100{
+  width: 100%;
+}
 
 /*mega dropdown css*/
 .navbar-default{
 color: #fff;
-background-color: #d66d6d;
-border-color: #d66d6d;
+background-color: #999999;
+border-color: #999999;
 }
-.navbar-default .navbar-nav > li > a{
+.navbar-default .navbar-nav > li > a,.navbar-default .navbar-nav > li > a:hover{
   color:#fff;
 }
 .navbar-default .navbar-nav > .dropdown > a .caret{
