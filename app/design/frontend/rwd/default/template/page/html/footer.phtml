@@ -30,3 +30,19 @@
         <address class="copyright">&copy; <?php echo date(Y) ?> SwarajShop. All Rights Reserved.</address>
     </div>
 </div>
+<script src="<?php echo $this->getSkinUrl();?>js/bootstrap.min.js"></script> 
+<script type="text/javascript">
+	//for mega dropdown
+	jQuery(document).ready(function(){
+	  jQuery(".dropdown").hover(
+	      function() { jQuery('.dropdown-menu', this).stop().fadeIn("fast");
+	      },
+	      function() { jQuery('.dropdown-menu', this).stop().fadeOut("fast");
+	  });
+
+	  jQuery('.menu-large').click(function(event){
+	    event.preventDefault();
+	    event.stopPropagation();
+	  });
+	});  
+</script>
