@@ -669,7 +669,7 @@ h6, .h6 {
 .block-title strong {
   margin: 0;
   margin-bottom: 10px;
-  color: #636363;
+  color: #696969;
   font-family: "Raleway", "Helvetica Neue", Verdana, Arial, sans-serif;
   font-size: 14px;
   font-weight: bold;
@@ -677,7 +677,6 @@ h6, .h6 {
   line-height: 1.4;
   text-rendering: optimizeSpeed;
   text-transform: uppercase;
-  color: #fff;
   margin-bottom: 0;
   text-transform: uppercase;
   font-weight: 600;
@@ -917,7 +916,7 @@ body:not(.customer-account) .block:first-child .block-title {
 .cart-table .product-cart-actions .button,
 #co-shipping-method-form .buttons-set .button,
 .footer .button {
-  background: #3399cc;
+  background: #2eb890;
   display: inline-block;
   padding: 7px 15px;
   border: 0;
@@ -935,21 +934,21 @@ body:not(.customer-account) .block:first-child .block-title {
 .cart-table .product-cart-actions .button:hover,
 #co-shipping-method-form .buttons-set .button:hover,
 .footer .button:hover {
-  background: #2e8ab8;
+  background: #2eb890;
   cursor: pointer;
 }
 .button:active,
 .cart-table .product-cart-actions .button:active,
 #co-shipping-method-form .buttons-set .button:active,
 .footer .button:active {
-  background: #297aa3;
+  background: #2eb890;
   color: #FFFFFF;
 }
 .button:focus,
 .cart-table .product-cart-actions .button:focus,
 #co-shipping-method-form .buttons-set .button:focus,
 .footer .button:focus {
-  background-color: #297aa3;
+  background-color: #2eb890;
   outline: none;
   color: #FFFFFF;
 }
@@ -1312,7 +1311,7 @@ a.button:hover {
 }
 .footer-container {
   padding-top: 0px;
-  background-color: #555;
+  background-color: #efefef;
 }
 
 /* -------------------------------------------- *
@@ -3187,7 +3186,7 @@ body {
  * ============================================ */
 .header-language-background {
   padding: 10px;
-  background-color: #3399cc;
+  background-color: #FFFFFF;
   text-transform: uppercase;
 }
 .header-language-background .header-language-container {
@@ -3231,7 +3230,7 @@ body {
 }
 .header-language-background,
 .header-language-background a {
-  color: #e6e6e6;
+  color: #696969;
 }
 
 @media only screen and (max-width: 770px) {
@@ -3661,8 +3660,8 @@ a.skip-link {
 @media only screen and (min-width: 771px) {
   #header-search {
     display: block;
-    position: absolute;
-    top: 55px;
+    /*position: absolute;*/
+    top: 45px;
     right: 0;
     width: 25%;
     height: 50px;
@@ -3880,7 +3879,7 @@ a.skip-link {
 
   .skip-cart .count,
   .skip-link.skip-active .count {
-    color: #3399cc;
+    color: #696969;
   }
 }
 .skip-cart .count.empty {
@@ -3997,7 +3996,7 @@ a.skip-link {
 }
 .footer .block-title,
 .footer address {
-  color: #fff;
+  color: #696969;
 }
 .footer .links {
   float: left;
@@ -4011,10 +4010,10 @@ a.skip-link {
   padding: 4px 0;
 }
 .footer .links a {
-  color: #fff;
+  color: #696969;
 }
 .footer .links a:hover {
-  color: #fff;
+  color: #696969;
 }
 .footer .block-subscribe {
   float: right;

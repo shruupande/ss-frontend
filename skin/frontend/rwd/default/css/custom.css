@@ -23,6 +23,16 @@
   padding: 10px;
   border: 1px solid #ccc;
 }
+.top-header-links{
+  background-color: #dbdbdb;
+  padding: 5px 10px;
+}
+.top-header-links a{
+  color: #696969;
+}
+.top-header-links span{
+  color: #000000;
+}
 /*.col-xs-3{
   width: 19%;
   float: left;
@@ -39,10 +49,10 @@
   border:1px solid #eee;
 }
 .page-header,.account-cart-wrapper a,.account-cart-wrapper .header-minicart{
-  background-color: #f2f5fb;
+  background-color: #efefef;
 }
 .account-cart-wrapper a .label{
-  color:#8c7047;
+  color:#696969;
   text-transform: capitalize;
   font-size: 14px;
 }
@@ -50,7 +60,10 @@
   font-size: 30px;
   line-height: 2;
   margin-left: 35px;
-  color: #f55253;
+  color: #696969;
+}
+.logo-text:hover{
+  color: #696969; 
 }
 #select-currency{
   color: #000;
@@ -77,11 +90,17 @@ a:focus, a:hover{
 .pad20{
   padding: 20px;
 }
+.pad5{
+  padding: 5px;
+}
 .mb10{
   margin-bottom: 10px;
 }
+.mb20{
+  margin-bottom: 20px;
+}
 .currency-switcher label{
-  color: #fff;
+  color: #696969;
   text-transform: capitalize;
 }
 
@@ -107,13 +126,24 @@ a:focus, a:hover{
   display: block !important;
 }
 
+.mega-dropdown{
+  margin-bottom: 0px;
+  z-index: 2;
+}
+.bg-black-op3{
+  background-color: rgba(0,0,0,0.22);
+}
+.width100{
+  width: 100%;
+}
+
 /*mega dropdown css*/
 .navbar-default{
 color: #fff;
-background-color: #ccc6c6;
-border-color: #aca1a2;
+background-color: #999999;
+border-color: #999999;
 }
-.navbar-default .navbar-nav > li > a{
+.navbar-default .navbar-nav > li > a,.navbar-default .navbar-nav > li > a:hover{
   color:#fff;
 }
 .navbar-default .navbar-nav > .dropdown > a .caret{
@@ -188,5 +218,17 @@ border-color: #aca1a2;
   }
   .navbar-nav .open .dropdown-menu .dropdown-header{
   color:#fff;
+  }
+}
+
+@media (min-width: 768px){
+  .top40{
+    top: 40px;
+  }
+  .top55{
+    top: 55px;
+  }
+  .currency-switcher{
+    float: right;
   }
 }

@@ -27,34 +27,51 @@
  * @var Mage_Page_Block_Html_Header $this
  */
 ?>
-
-<div class="header-language-background">
+<!-- <div class="header-language-background">
     <div class="header-language-container">
         <div class="store-language-container">
-            <?php echo $this->getChildHtml('store_language') ?>
+            <?php //echo $this->getChildHtml('store_language') ?>
         </div>
-
-        <?php echo $this->getChildHtml('currency_switcher') ?>
-
-        <p class="welcome-msg"><?php //echo $this->getChildHtml('welcome') ?> <?php echo $this->getChildHtml('accountLinks') ?></p>
+        <?php //echo $this->getChildHtml('currency_switcher') ?>
+        <p class="welcome-msg"><?php //echo $this->getChildHtml('welcome') ?> <?php //echo $this->getChildHtml('accountLinks') ?></p>
     </div>
+</div> -->
+<div class="col-xs-12 col-sm-12 text-right top-header-links">
+    <a href="#">Free Shipping (India)</a> <span>|</span>
+    <a href="#">Download App</a> <span>|</span>
+    <a href="#">24x7 Customer Care</a> <span>|</span>
+    <a href="#">Track Order</a> <span>|</span>
+    <a href="#">Sell On SwarajShop</a>
 </div>
 
-<header id="header" class="page-header">
-    <div class="page-header-container">
+<header id="header" class="col-xs-12 col-sm-12 page-header">
+    <div class="col-xs-12 col-sm-12 page-header-container">
         <a class="logo" href="<?php echo $this->getUrl('') ?>">
-            <!-- <img src="<?php //echo $this->getLogoSrc() ?>" alt="<?php //echo $this->getLogoAlt() ?>" class="large" />
-            <img src="<?php //echo $this->getLogoSrcSmall() ?>" alt="<?php //echo $this->getLogoAlt() ?>" class="small" /> -->
-            <span class="logo-text">SwarajShop</span>
+            <img src="<?php echo $this->getSkinUrl();?>img/logo.png" alt="SwarajShop" class="large" />
+            <img src="<?php echo $this->getSkinUrl();?>img/logo.png" alt="SwarajShop" class="small" />
+            <!-- <span class="logo-text">SwarajShop</span> -->
         </a>
 
         <?php // In order for the language switcher to display next to logo on smaller viewports, it will be moved here.
               // See app.js for details ?>
-        <div class="store-language-container"></div>
+        <!-- <div class="store-language-container"></div> -->
+       
+        <!-- Search -->
+
+        <div id="header-search" class="col-xs-12 col-sm-3 skip-content">
+            <?php echo $this->getChildHtml('topSearch') ?>
+        </div>
+        
+        <div class="col-xs-12 col-sm-3 hidden-xs top55 ">
+            <?php echo $this->getChildHtml('currency_switcher') ?>
+        </div>
+       
+        
 
         <!-- Skip Links -->
 
-        <div class="skip-links">
+        <!-- <div class="skip-links"> -->
+        <div class="col-xs-12 col-sm-3 top40">
             <a href="#header-nav" class="skip-link skip-nav">
                 <span class="icon"></span>
                 <span class="label"><?php echo $this->__('Menu'); ?></span>
@@ -83,23 +100,28 @@
 
         <!-- Navigation -->
 
-        <div id="header-nav" class="skip-content">
+        <div id="header-nav" class="col-xs-12 skip-content">
             <?php echo $this->getChildHtml('topMenu') ?>
         </div>
 
         <!-- Search -->
 
-        <div id="header-search" class="skip-content">
-            <?php echo $this->getChildHtml('topSearch') ?>
-        </div>
+        <!-- <div id="header-search" class="skip-content">
+            <?php //echo $this->getChildHtml('topSearch') ?>
+        </div> -->
 
         <!-- Account -->
 
-        <div id="header-account" class="skip-content">
+        <div id="header-account" class="col-xs-12 skip-content">
             <?php echo $this->getChildHtml('topLinks') ?>
         </div>
     </div>
 </header>
 
-
 <?php echo $this->getChildHtml('topContainer'); ?>
+
+<!-- Mega Dropdown -->
+<?php print $this->getLayout()
+                 ->createBlock("catalog/product_new")
+                 ->setTemplate("catalog/product/mega-dropdown.phtml")
+                 ->toHtml(); ?>

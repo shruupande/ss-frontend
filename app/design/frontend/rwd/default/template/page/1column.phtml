@@ -41,8 +41,6 @@
 <head>
 <?php echo $this->getChildHtml('head') ?>
 <link rel="stylesheet"  href="<?php echo $this->getSkinUrl();?>css/lightslider.css"/>
-<link rel="stylesheet"  href="<?php echo $this->getSkinUrl();?>css/bootstrap.min.css"/>
-<link rel="stylesheet"  href="<?php echo $this->getSkinUrl();?>css/custom.css"/>
 </head>
 <body<?php echo $this->getBodyClass()?' class="'.$this->getBodyClass().'"':'' ?>>
 <?php echo $this->getChildHtml('after_body_start') ?>
@@ -50,8 +48,8 @@
     <?php echo $this->getChildHtml('global_notices') ?>
     <div class="page">
         <?php echo $this->getChildHtml('header') ?>
-        <div class="main-container col1-layout">
-            <div class="main">
+        <div class="col-xs-12 col-sm-12 main-container col1-layout">
+            <div class="col-xs-12 col-sm-12 main">
                 <?php echo $this->getChildHtml('breadcrumbs') ?>
                 <div class="col-main">
                     <?php echo $this->getChildHtml('global_messages') ?>
@@ -66,7 +64,6 @@
     </div>
 </div>
 <?php echo $this->getAbsoluteFooter() ?>
-<script src="<?php echo $this->getSkinUrl();?>js/bootstrap.min.js"></script> 
 <script src="<?php echo $this->getSkinUrl();?>js/lightslider.js"></script> 
 <script type="text/javascript">
       //light slider
@@ -89,9 +86,9 @@
           }
       });
 
-      jQuery('#content-slider-2').lightSlider({
+      jQuery('#content-slider-2,#content-slider-3').lightSlider({
           item:6,
-           auto:false,
+          auto:false,
           loop:true,
           slideMove:2,
           easing: 'cubic-bezier(0.25, 0, 0.25, 1)',
@@ -116,27 +113,11 @@
           onSliderLoad: function() {
             jQuery('#content-slider-2').removeClass('cs-hidden-2');
             jQuery('#loader-2').hide();
+            jQuery('#content-slider-3').removeClass('cs-hidden-3');
+            jQuery('#loader-3').hide();
           }
       });
 
-
-      jQuery(document).ready(function(){
-          jQuery(".dropdown").hover(
-              function() { jQuery('.dropdown-menu', this).stop().fadeIn("fast");
-              },
-              function() { jQuery('.dropdown-menu', this).stop().fadeOut("fast");
-          });
-
-          jQuery('.menu-large').click(function(event){
-            event.preventDefault();
-            event.stopPropagation();
-            // jQuery(this).addClass('visible-important');
-            // jQuery(this).children().hasClass('megamenu').hide();
-          });
-      });  
-
-
-      
     </script>
 </body>
 </html>
