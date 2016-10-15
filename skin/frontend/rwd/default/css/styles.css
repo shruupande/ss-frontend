@@ -3660,8 +3660,8 @@ a.skip-link {
 @media only screen and (min-width: 771px) {
   #header-search {
     display: block;
-    position: absolute;
-    top: 55px;
+    /*position: absolute;*/
+    top: 45px;
     right: 0;
     width: 25%;
     height: 50px;
