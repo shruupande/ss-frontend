@@ -23,6 +23,16 @@
   padding: 10px;
   border: 1px solid #ccc;
 }
+.top-header-links{
+  background-color: #dbdbdb;
+  padding: 5px 10px;
+}
+.top-header-links a{
+  color: #696969;
+}
+.top-header-links span{
+  color: #000000;
+}
 /*.col-xs-3{
   width: 19%;
   float: left;
@@ -208,5 +218,17 @@ border-color: #999999;
   }
   .navbar-nav .open .dropdown-menu .dropdown-header{
   color:#fff;
+  }
+}
+
+@media (min-width: 768px){
+  .top40{
+    top: 40px;
+  }
+  .top55{
+    top: 55px;
+  }
+  .currency-switcher{
+    float: right;
   }
 }
