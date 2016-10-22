@@ -1,5 +1,25 @@
+
+
 <?php
-    $_productCollection = $this->getMyCollection();
+	$connection = Mage::getSingleton('core/resource')->getConnection('core_read');
+	$sql        = "Select product_id from trending_products where category_id = 1";
+	$rows       = $connection->fetchAll($sql);
+	
+	$productIds = array();
+	foreach($rows as $entityIds){
+		$entity = $entityIds['product_id'];
+		array_push($productIds,$entity);
+	}
+	
+	$attributes = Mage::getSingleton('catalog/config')->getProductAttributes();
+	$collection = Mage::getModel('catalog/product')
+                 ->getCollection()                
+                 ->addAttributeToFilter('entity_id', array('in' => $productIds))
+	             ->addAttributeToSelect($attributes);
+
+
+	$_productCollection = $collection;
+    //$_productCollection = $this->getMyCollection();
     $category = $this->catName();
     $_helper = $this->helper('catalog/output');
     $_collectionSize = $this->productsAmount();
@@ -33,7 +53,8 @@
 			    <?php endif; ?>
 			    <div class="clear"></div>
 			</li>
-		    <?php if (++$i > $_collectionSize-1 ) break; endforeach ?>
+		    <?php if (++$i > $_collectionSize-1 ) break; 
+			endforeach ?>
 		</ul>
 	    </div>
 	    <div class="clear"></div>
@@ -51,7 +72,7 @@ jQuery(document).ready(function(){
       responsiveSlideWidth: true,
       snapToChildren: true,
       desktopClickDrag: true,
-      infiniteSlider: true,
+      infiniteSlider: false,
       navSlideSelector: '.sliderNavi .naviItem',
       navNextSelector: '.widget-container .next',
       navPrevSelector: '.widget-container .prev'
